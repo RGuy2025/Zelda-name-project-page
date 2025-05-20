@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Legend Of Zelda</title>
+  <style>
+    body {
+      background: linear-gradient(109.6deg,
+          rgb(255, 24, 134) 11.2%,
+          rgb(252, 232, 68) 52%,
+          rgb(53, 178, 239) 100.2%);
+    }
+
+    h1 {
+      text-align: center;
+      font-family: papyrus;
+    }
+
+    h2 {
+      text-align: center;
+      font-family: papyrus;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    div {
+      font-size: 25px;
+    }
+
+    .container {
+      max-width: 800px;
+      background: cornsilk;
+      margin: 20px auto;
+      padding: 10px;
+      border-radius: 30px;
+    }
+
+    .game {
+      font-size: 20px;
+      font-family: papyrus;
+      padding: 20px;
+      display: inline-block;
+      text-align: center;
+      margin-left: 100px;
+    }
+
+    .link {
+      max-width: 75px;
+      transition: all 200ms ease-out;
+      border-radius: 50%;
+    }
+
+    .link:hover {
+      border: 2px solid #f6378f;
+      cursor: pointer;
+      transform: scale(1.5);
+    }
+
+    .other {
+      font-size: 15px;
+      font-style: italic;
+    }
+
+    .letter {
+      display: block;
+      max-width: 50px;
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid #141010;
+      margin: 5px 350px;
+      transition: all 150ms ease-in-out;
+    }
+
+    .letter:hover {
+      cursor: pointer;
+      transform: rotateY(360deg) scale(1.2);
+    }
+
+    .dark .letter {
+      background: cornsilk;
+    }
+
+    button {
+      display: block;
+      margin: 20px auto;
+      font-size: 20px;
+      padding: 10px 5px;
+      border: 1px solid #fe4e6e;
+      background: #ffe700;
+      color: #613864;
+      transition: all 200ms ease-in-out;
+      border-radius: 30px;
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    button:hover {
+      background: #fe4e6e;
+      border: 3px solid rgb(53, 178, 239);
+      cursor: pointer;
+    }
+
+    .darkTheme {
+      background: #141010;
+      color: #c3195d;
+      display: block;
+      margin: 20px auto;
+      padding: 15px 10px;
+      font-size: 15px;
+    }
+
+    .darkTheme:hover {
+      background-color: #c3195d;
+      color: #141010;
+      border: 3px solid #680747;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
+    }
+
+    .grid img {
+      width: 100%;
+    }
+
+    .icon {
+      background: cornsilk;
+      padding: 20px 0px;
+    }
+
+    .dark .icon {
+      background: rgb(16, 37, 60);
+    }
+
+    .princess {
+      background: cornsilk;
+      padding: 100px 0px;
+    }
+
+    .dark .princess {
+      background: rgb(16, 37, 60);
+    }
+
+    .dark {
+      background: linear-gradient(109.6deg,
+          rgb(36, 45, 57) 11.2%,
+          rgb(16, 37, 60) 51.2%,
+          rgb(0, 0, 0) 98.6%);
+      color: cornsilk;
+    }
+
+    .dark .container {
+      background: rgb(16, 37, 60);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 15px;
+      font-weight: 500;
+    }
+  </style>
+</head>
+
+<body>
+  <button class="darkTheme">Change Theme</button>
+  <div class="container">
+    <h1>What's In A Name?</h1>
+    <h2>The Many Faces of <em>Zelda</em></h2>
+    <p>
+      Throughout history there have been many notable people with the name
+      Zelda. Most people associate the name with the video game character but
+      in fact that character was named after Zelda Fitzgerald!
+    </p>
+    <div>
+      <span class="game"><strong>Click the Link to learn more about the character</strong></span>
+
+      <a href="https://en.wikipedia.org/wiki/Princess_Zelda" target="_blank">
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/138/161/original/link.jpg?1723206958"
+          class="link" /></a>
+    </div>
+    <br />
+
+    <div>
+      <span class="other">Other notable Zelda's are Zelda Williams, daughter of the late great
+        Robin Williams (named after the video game) and Marilyn Monroe used
+        the pseudonym Zelda Zonk!</span>
+      <br />
+      <a href="https://en.wikipedia.org/wiki/Zelda_(given_name)" target="_blank">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/138/164/original/letter-z-5569129_1280.png?1723207996"
+          class="letter" /></a>
+    </div>
+    <hr />
+    <div class="grid">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/138/167/original/Zelda_Fitzgerald_circa_1919_Retouched.jpg?1723209912"
+        class="socialite" />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/138/206/original/marilyn-in-jackie-wig-14.jpeg?1723221097"
+        class="icon" />
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/138/168/original/princesszelda.jpg?1723209924"
+        class="princess" />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/138/169/original/zeldawilliams.jpg?1723209938"
+        class="actor" />
+    </div>
+    <button class="pick-a-zelda">ZELDA QUOTES</button>
+  </div>
+  <footer>
+    Coded by Rachel Guyett and dedicated with 💖 to my daughter, Zelda, the
+    next generation of greatness❣️
+  </footer>
+
+  <script>
+    function changeTheme() {
+      let body = document.querySelector("body");
+      if (body.classList.contains("dark")) {
+        body.classList.remove("dark");
+      } else {
+        body.classList.add("dark");
+      }
+    }
+    function favouriteZelda() {
+      let name = prompt(
+        "What is the last name of your favourite Zelda on this page?"
+      );
+      name = name.toLowerCase();
+      name = name.trim();
+      if (name === "fitzgerald") {
+        alert(
+          " 'She refused to be bored chiefly because she wasn't boring!' "
+        );
+      } else if (name === "zonk") {
+        alert(
+          " 'Imperfection is beauty, madness is genius, and it's better to be absolutely ridiculous than absolutely boring!' "
+        );
+      } else if (name === "williams") {
+        alert(
+          " 'Truthfully, you're not your audience, so all that self-consciousness and all that-it gets in the way of you actually just being the best thing in whatever thing that you're doing!'"
+        );
+      } else if (name === "guyett") {
+        alert(" 'You can do it! I'm proud of you!' ");
+      } else {
+        alert(
+          " 'Yes, we are humans. We have neither the power of spirits nor demons. But when we combine our strength...No one can defeat us!' "
+        );
+      }
+    }
+
+    let themeButton = document.querySelector(".darkTheme");
+    themeButton.addEventListener("click", changeTheme);
+
+    let quotes = document.querySelector(".pick-a-zelda");
+    quotes.addEventListener("click", favouriteZelda);
+  </script>
+</body>
+
+</html>
